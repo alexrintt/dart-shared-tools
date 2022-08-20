@@ -5,9 +5,9 @@
 ```yaml
 dependencies:
   # ...
-  flutter_shared_tools:
+  dart_shared_tools:
     git:
-      url: https://github.com/alexrintt/flutter-shared-tools
+      url: https://github.com/alexrintt/dart-shared-tools
       ref: master
   # ...
 ```
