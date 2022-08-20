@@ -12,6 +12,12 @@ dependencies:
   # ...
 ```
 
+And use as:
+
+```dart
+import 'package:dart_shared_tools/dart_shared_tools';
+```
+
 ## Features
 
 Check out full list of features.
