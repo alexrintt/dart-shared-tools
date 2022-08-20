@@ -15,7 +15,7 @@ dependencies:
 And use as:
 
 ```dart
-import 'package:dart_shared_tools/dart_shared_tools';
+import 'package:dart_shared_tools/dart_shared_tools.dart';
 ```
 
 ## Features
