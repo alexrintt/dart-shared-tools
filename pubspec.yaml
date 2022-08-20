@@ -1,5 +1,5 @@
-name: flutter_shared_tools
-description: A set of Flutter tools I usually make use in my projects.
+name: dart_shared_tools
+description: A set of Dart tools I usually make use in my projects (no Flutter dependency).
 version: 0.1.0
 homepage: https://github.com/alexrintt/flutter-shared-tools
 
@@ -8,13 +8,10 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   lint: ^1.8.2
+  test: ^1.21.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

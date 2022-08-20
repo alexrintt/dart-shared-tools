@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:flutter_shared_tools/utils/sem_ver.dart';
-import 'package:flutter_test/flutter_test.dart';
+import 'package:dart_shared_tools/utils/sem_ver.dart';
+import 'package:test/test.dart';
 
 void main() {
   test(
