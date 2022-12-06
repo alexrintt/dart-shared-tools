@@ -6,28 +6,29 @@ void main() {
   group('Parse numeric iterables', () {
     test('Iterable of int', () {
       final Iterable<int> source =
-          Iterable<String>.generate(20, (int i) => '${i + 1}').parseAsInt();
+          Iterable<String>.generate(20, (int i) => '${i + 1}').parseAsIntList();
 
       expect(source.first, 1);
       expect(source.last, 20);
     });
     test('Iterable of double', () {
       final Iterable<double> source =
-          Iterable<String>.generate(20, (int i) => '${i / 2}').parseAsDouble();
+          Iterable<String>.generate(20, (int i) => '${i / 2}')
+              .parseAsDoubleList();
 
       expect(source.first, 0);
       expect(source.last, 9.5);
     });
     test('List of int', () {
       final List<int> source =
-          List<String>.generate(20, (int i) => '${i + 1}').parseAsInt();
+          List<String>.generate(20, (int i) => '${i + 1}').parseAsIntList();
 
       expect(source.first, 1);
       expect(source.last, 20);
     });
     test('List of double', () {
       final List<double> source =
-          List<String>.generate(20, (int i) => '${i / 2}').parseAsDouble();
+          List<String>.generate(20, (int i) => '${i / 2}').parseAsDoubleList();
 
       expect(source.first, 0);
       expect(source.last, 9.5);

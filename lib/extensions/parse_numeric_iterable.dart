@@ -1,51 +1,51 @@
 extension ParseNumericIterable on Iterable<String> {
-  Iterable<num> parseAsNum({int? radix}) {
+  Iterable<num> parseAsNumList({int? radix}) {
     return map((String e) => num.parse(e));
   }
 
-  Iterable<num> tryParseAsNum({int? radix}) {
+  Iterable<num> tryParseAsNumList({int? radix}) {
     return map((String e) => num.parse(e));
   }
 
-  Iterable<int> parseAsInt({int? radix}) {
+  Iterable<int> parseAsIntList({int? radix}) {
     return map((String e) => int.parse(e, radix: radix));
   }
 
-  Iterable<int?> tryParseAsInt({int? radix}) {
+  Iterable<int?> tryParseAsIntList({int? radix}) {
     return map((String e) => int.tryParse(e, radix: radix));
   }
 
-  Iterable<double> parseAsDouble({int? radix}) {
+  Iterable<double> parseAsDoubleList({int? radix}) {
     return map((String e) => double.parse(e));
   }
 
-  Iterable<double?> tryParseAsDouble({int? radix}) {
+  Iterable<double?> tryParseAsDoubleList({int? radix}) {
     return map((String e) => double.tryParse(e));
   }
 }
 
 extension ParseNumericList on List<String> {
-  List<num> parseAsNum({int? radix}) {
+  List<num> parseAsNumList({int? radix}) {
     return map((String e) => num.parse(e)).toList();
   }
 
-  List<num> tryParseAsNum({int? radix}) {
+  List<num> tryParseAsNumList({int? radix}) {
     return map((String e) => num.parse(e)).toList();
   }
 
-  List<int> parseAsInt({int? radix}) {
+  List<int> parseAsIntList({int? radix}) {
     return map((String e) => int.parse(e, radix: radix)).toList();
   }
 
-  List<int?> tryParseAsInt({int? radix}) {
+  List<int?> tryParseAsIntList({int? radix}) {
     return map((String e) => int.tryParse(e, radix: radix)).toList();
   }
 
-  List<double> parseAsDouble({int? radix}) {
+  List<double> parseAsDoubleList({int? radix}) {
     return map((String e) => double.parse(e)).toList();
   }
 
-  List<double?> tryParseAsDouble({int? radix}) {
+  List<double?> tryParseAsDoubleList({int? radix}) {
     return map((String e) => double.tryParse(e)).toList();
   }
 }

@@ -11,3 +11,4 @@ linter:
     always_use_package_imports: false
     prefer_relative_imports: true
     always_specify_types: true
+    avoid_relative_lib_imports: false
