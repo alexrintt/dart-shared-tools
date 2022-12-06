@@ -15,11 +15,11 @@ extension ParseNumericIterable on Iterable<String> {
     return map((String e) => int.tryParse(e, radix: radix));
   }
 
-  Iterable<double> parseAsDoubleList({int? radix}) {
+  Iterable<double> parseAsDouble({int? radix}) {
     return map((String e) => double.parse(e));
   }
 
-  Iterable<double?> tryParseAsDoubleList({int? radix}) {
+  Iterable<double?> tryParseAsDouble({int? radix}) {
     return map((String e) => double.tryParse(e));
   }
 }
@@ -41,11 +41,11 @@ extension ParseNumericList on List<String> {
     return map((String e) => int.tryParse(e, radix: radix)).toList();
   }
 
-  List<double> parseAsDoubleList({int? radix}) {
+  List<double> parseAsDouble({int? radix}) {
     return map((String e) => double.parse(e)).toList();
   }
 
-  List<double?> tryParseAsDoubleList({int? radix}) {
+  List<double?> tryParseAsDouble({int? radix}) {
     return map((String e) => double.tryParse(e)).toList();
   }
 }

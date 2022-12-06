@@ -13,8 +13,7 @@ void main() {
     });
     test('Iterable of double', () {
       final Iterable<double> source =
-          Iterable<String>.generate(20, (int i) => '${i / 2}')
-              .parseAsDoubleList();
+          Iterable<String>.generate(20, (int i) => '${i / 2}').parseAsDouble();
 
       expect(source.first, 0);
       expect(source.last, 9.5);
@@ -28,7 +27,7 @@ void main() {
     });
     test('List of double', () {
       final List<double> source =
-          List<String>.generate(20, (int i) => '${i / 2}').parseAsDoubleList();
+          List<String>.generate(20, (int i) => '${i / 2}').parseAsDouble();
 
       expect(source.first, 0);
       expect(source.last, 9.5);
